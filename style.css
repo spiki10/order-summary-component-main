@@ -1,0 +1,111 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    font-family: "Red Hat Display";
+}
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Brigt-blue: hsl(245, 75%, 52%);
+--Verypale-blue: hsl(225, 100%, 98%);
+--Desaurated-blue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+
+#main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+}
+.inner-box{
+    background-color: white;
+    width: 400px;
+    height: 625px;
+    border-radius: 20px;
+    overflow:hidden;  
+
+    
+}
+.center-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:7%;
+}
+.head{
+    width:100%;
+    margin: 0;
+}
+.btn{ 
+    width: 90%;
+    margin: 10px 0;
+    border: none;
+    padding: 10px;
+    
+    
+}
+h1{
+    font-weight: 900;
+    font-size: 32px;
+    margin: 2% 0;
+}
+p{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--Desaurated-blue);
+}
+.bold{
+    color: black;
+    font-weight: 900;
+
+}
+.price{
+    color: var(--Brigt-blue);
+    font-weight: 700;
+}
+.payment{
+    background-color: var(--Brigt-blue);
+    margin: 7% 0;
+    width: 95%;
+}
+.white{
+    color: var(--Desaurated-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+.plan{
+    background-color: var(--Verypale-blue);
+    width: 95%;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plan-text{
+    margin-right: 25%;
+    margin-top: 5%;
+}
+
+
+/* Hover state */
+.white:hover{
+    color: var(--Darkblue);
+}
+.payment:hover{
+    background-color:rgba(118,108,241,255);
+}
+.price:hover{
+    color: var(--Desaurated-blue);
+}
